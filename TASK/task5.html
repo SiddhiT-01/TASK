@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media on Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+             border: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Embedding Media in HTML</h1>
+        
+        <hr>
+
+        <h2>1. Image (using &lt;img&gt; tag)</h2>
+        
+        <img src="https://picsum.photos/id/1018/800/400" alt="A beautiful mountain landscape with a river">
+
+        <hr>
+
+        <h2>2. YouTube Video (using an &lt;iframe&gt;)</h2>
+        
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BHACKCNDMW8?si=YQCqTV8Vhb4z8DnW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr>
+
+        <h2>3. Generic iFrame (embedding another website)</h2>
+        
+        <iframe src="https://www.wikipedia.org/" width="100%" height="400" title="Wikipedia iFrame Example"></iframe>
+
+    </div>
+
+</body>
+</html>

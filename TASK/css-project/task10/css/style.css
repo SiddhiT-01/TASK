@@ -1,0 +1,55 @@
+/* Basic reset for consistent styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for the page */
+}
+
+/* Main container to center the entire layout and give it a white background */
+.main-container {
+    max-width: 900px; /* Limits the max width of the whole grid */
+    margin: 40px auto; /* Centers the container horizontally */
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the white container */
+    border: 1px solid #ddd;
+}
+
+/* Styles for the top, middle, and bottom pink bars */
+.top-bar, .middle-bar, .bottom-bar {
+    background-color: #ffe0e6; /* Light pink color */
+    height: 30px; /* Height of the bars */
+    margin: 20px 0; /* Vertical space above and below the bars */
+}
+
+/* Styles for a row of image boxes */
+.grid-row {
+    display: flex; /* Makes items in the row align horizontally */
+    justify-content: space-between; /* Distributes space between items */
+    margin: 0 -10px; /* Negative margin to counteract padding/gap on image boxes */
+}
+
+/* Styles for each individual image box */
+.image-box {
+    flex: 1; /* Each box takes equal available space */
+    margin: 0 10px; /* Space between the image boxes */
+    background-color: #a0a0a0; /* Gray background for the boxes */
+    height: 150px; /* Fixed height for the image boxes */
+    display: flex; /* Use flex to center the image itself */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures image doesn't break the box */
+    border: 1px solid #ccc;
+}
+
+/* Styles for the images inside the boxes */
+.image-box img {
+    width: 100%; /* Image takes full width of its container */
+    height: 100%; /* Image takes full height of its container */
+    object-fit: cover; /* Ensures image covers the box without distortion */
+    display: block; /* Removes extra space below image */
+}
+
+.grid-row .image-box:nth-child(even) {
+    border: 2px solid blue;
+}

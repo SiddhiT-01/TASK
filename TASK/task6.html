@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .title-bar {
+            background-color: #5d7e3a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .table-container {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .student-table {
+            width: 90%;
+            border-collapse: collapse;
+        }
+        .student-table th, .student-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .student-table th {
+            background-color: #f8f8f8;
+        }
+
+        .divider-bar {
+             background-color: #5d7e3a;
+             height: 40px;
+        }
+
+        .image-section {
+            display: flex; 
+            min-height: 400px;
+        }
+        .main-column {
+            flex: 1;
+            border: 1px solid #f0f0f0;
+        }
+
+        .middle-column-container {
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .nested-div {
+            flex: 1;
+            border: 1px dashed #ccc; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            padding: 10px;
+        }
+
+        .frog-image {
+            max-width: 100%;  
+            max-height: 100%;
+            display: block;
+        }
+
+        .blue-bar {
+            background-color: #2c3e50;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="title-bar">STUDENT TABLE</div>
+        <div class="table-container">
+            <table class="student-table">
+                <thead><tr><th>ID</th><th>Name</th><th>Grade</th></tr></thead>
+                <tbody><tr><td>101</td><td>Amit</td><td>A</td></tr><tr><td>102</td><td>Mira</td><td>B</td></tr><tr><td>103</td><td>Jotsna</td><td>A</td></tr></tbody>
+            </table>
+        </div>
+        <div class="divider-bar"></div>
+
+        <div class="image-section">
+            
+            <div class="main-column"></div>
+
+            <div class="main-column middle-column-container">
+                <div class="nested-div"></div>
+                
+                <div class="nested-div">
+                                        <img src="https://diapteron.co.uk/wp-content/uploads/2023/12/The-Blue-Poison-Dart-Frog-A-Stunning-Pet-Choice.jpg" alt="Blue Poison Dart Frog" class="frog-image">
+                </div>
+
+                <div class="nested-div"></div>
+            </div>
+
+            <div class="main-column"></div>
+        </div>
+        
+        <div class="blue-bar"></div>
+
+    </div>
+
+</body>
+</html>
